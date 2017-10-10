@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Hogwarts News Server</title>
+    <!-- <base href="web/" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/spectre-0.4.1/spectre.min.css" />
     <link rel="stylesheet" href="css/spectre-0.4.1/spectre-exp.min.css" />
@@ -16,10 +20,11 @@
       <header class="navbar">
         <section class="navbar-section">
           <img class="img-brand" src="img/brand.jpg"/>
-          <a href="#" class="navbar-brand mr-2">Hogwarts</a>
+          <a href="https://github.com/JChamz/hogwarts-news-server" class="navbar-brand mr-2">Hogwarts</a>
           <a href="#" class="btn btn-link">Charms</a>
           <a href="#" class="btn btn-link">Dark Arts</a>
-          <a href="https://github.com/picturepan2/spectre" class="btn btn-link">MajHub</a>
+          <a href="/" class="btn btn-link">News</a>
+          <a href="#" class="btn btn-link">MajHub</a>
         </section>
         <section class="navbar-section">
           <div class="input-group input-inline">
@@ -40,7 +45,7 @@
     <div class="col-8 col-mx-auto" id="content">
       <div class="col-10 col-mx-auto">
 
-        <div class="tile">
+        <div class="tile" id="news1">
           <div class="tile-icon">
             <div class="example-tile-icon">
               <img class="img" src="img/news1.jpg"/>
@@ -54,12 +59,12 @@
             </p>
           </div>
           <div class="tile-action">
-            <button class="btn btn-primary more-news badge" data-badge="0" id="news1">Read full article</button>
+            <button class="btn btn-primary more-news badge" data-badge="0">Read full article</button>
           </div>
         </div>
         <div class="divider"></div>
 
-        <div class="tile">
+        <div class="tile" id="news2">
           <div class="tile-icon">
             <div class="example-tile-icon">
               <img class="img" src="img/news2.jpg"/>
@@ -74,12 +79,12 @@
             </p>
           </div>
           <div class="tile-action">
-            <button class="btn btn-primary more-news badge" data-badge="0" id="news2">Read full article</button>
+            <button class="btn btn-primary more-news badge" data-badge="0">Read full article</button>
           </div>
         </div>
         <div class="divider"></div>
 
-        <div class="tile">
+        <div class="tile" id="news3">
           <div class="tile-icon">
             <div class="example-tile-icon">
               <img class="img" src="img/news3.jpg"/>
@@ -93,12 +98,12 @@
             </p>
           </div>
           <div class="tile-action">
-            <button class="btn btn-primary more-news badge" data-badge="0" id="news3">Read full article</button>
+            <button class="btn btn-primary more-news badge" data-badge="0">Read full article</button>
           </div>
         </div>
         <div class="divider"></div>
 
-        <div class="tile">
+        <div class="tile" id="news4">
           <div class="tile-icon">
             <div class="example-tile-icon">
               <img class="img" src="img/news4.jpg"/>
@@ -111,7 +116,7 @@
               orphaned and raised in a Muggle orphanage...</p>
           </div>
           <div class="tile-action">
-            <button class="btn btn-primary more-news badge" data-badge="0" id="news4">Read full article</button>
+            <button class="btn btn-primary more-news badge" data-badge="0">Read full article</button>
           </div>
         </div>
         <div class="divider"></div>
@@ -139,19 +144,20 @@
       <div class="modal">
         <div class="modal-overlay"></div>
         <div class="modal-container col-8 col-mx-auto">
-          <div class="modal-header">
+          <div class="modal-header bg-warning text-light">
             <button class="btn btn-clear float-right close-modal"></button>
-            <div class="modal-title h5">Hogwarts News Server</div>
+            <div class="modal-title h3">Hogwarts News Server</div>
           </div>
           <div class="modal-body">
-            <div class="content">
-              <!-- news content -->
-            </div>
+            <h4 class="header"><!-- news header --></h4>
+            <div class="content"><!-- news content --></div>
           </div>
           <div class="divider"></div>
           <div class="modal-footer">
           <div class="modal-action col-3">
-            <button class="btn btn-primary stash-news">Stash news</button>
+            <button class="btn btn-secondary stash-news">
+              <i class="icon icon-share"></i> Stash news
+            </button>
           </div>
             <div class="col-mr-6">
               <small>Property of Hogwarts</small>
